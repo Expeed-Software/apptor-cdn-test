@@ -1,0 +1,8 @@
+{
+  "collection": "dispatch-api",
+  "operations": [
+    { "operationId": "listJobs", "method": "GET", "path": "/jobs" },
+    { "operationId": "getJob", "method": "GET", "path": "/jobs/{id}" },
+    { "operationId": "assignJob", "method": "POST", "path": "/jobs/{id}/assign" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "app": "field-service",
+  "schemaVersion": 1,
+  "releases": [
+    { "version": "1.0.0", "path": "releases/v1.0.0", "exportedAt": "2026-06-10T09:00:00Z" }
+  ]
+}
