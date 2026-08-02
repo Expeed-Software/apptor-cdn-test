@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "app": { "key": "customer-portal" },
+  "version": "1.0.0",
+  "source": { "branch": "main", "commit": "a1b2c3d" },
+  "exportedAt": "2026-07-01T10:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": true,
+    "allowedSources": ["apptor-id", "google"],
+    "expectedClaims": ["email"],
+    "tokenStrategy": "apptor-minted"
+  },
+  "integrations": [
+    {
+      "collection": "billing-api",
+      "authType": "oauth2-client-credentials",
+      "configKeys": [
+        { "key": "base-url", "type": "url", "required": true },
+        { "key": "client-id", "type": "text", "required": true },
+        { "key": "client-secret", "type": "secret", "required": true }
+      ]
+    }
+  ]
+}

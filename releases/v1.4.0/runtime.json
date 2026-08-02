@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "app": { "key": "customer-portal" },
+  "version": "1.4.0",
+  "source": { "branch": "main", "commit": "c2d3e4f" },
+  "exportedAt": "2026-08-12T10:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": true,
+    "allowedSources": ["apptor-id", "google"],
+    "expectedClaims": ["email"],
+    "tokenStrategy": "apptor-minted"
+  },
+  "integrations": [
+    {
+      "collection": "billing-api",
+      "authType": "oauth2-client-credentials",
+      "configKeys": [
+        { "key": "base-url", "type": "url", "required": true },
+        { "key": "client-id", "type": "text", "required": true },
+        { "key": "client-secret", "type": "secret", "required": true }
+      ]
+    },
+    {
+      "collection": "crm-api",
+      "authType": "caller-bearer",
+      "configKeys": [{ "key": "base-url", "type": "url", "required": true }]
+    },
+    {
+      "collection": "notification-api",
+      "authType": "api-key",
+      "configKeys": [
+        { "key": "base-url", "type": "url", "required": true },
+        { "key": "api-key", "type": "secret", "required": true }
+      ]
+    }
+  ]
+}

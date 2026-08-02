@@ -1,0 +1,8 @@
+{
+  "collection": "billing-api",
+  "operations": [
+    { "operationId": "listInvoices", "method": "GET", "path": "/invoices" },
+    { "operationId": "getInvoice", "method": "GET", "path": "/invoices/{id}" },
+    { "operationId": "createInvoice", "method": "POST", "path": "/invoices" }
+  ]
+}
