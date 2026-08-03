@@ -11,12 +11,12 @@
     "expectedClaims": ["email"],
     "tokenStrategy": "apptor-minted",
     "configKeys": [
-      { "key": "issuer-url", "type": "url", "required": true },
-      { "key": "client-id", "type": "text", "required": true },
-      { "key": "client-secret", "type": "secret", "required": true },
-      { "key": "scopes", "type": "text", "required": false },
-      { "key": "authorize-url", "type": "url", "required": false },
-      { "key": "token-url", "type": "url", "required": false }
+      { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": true },
+      { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
+      { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
+      { "key": "scopes", "label": "Scopes", "type": "text", "required": false },
+      { "key": "authorize-url", "label": "Authorize URL", "type": "url", "required": false },
+      { "key": "token-url", "label": "Token URL", "type": "url", "required": false }
     ]
   },
   "integrations": [
@@ -24,15 +24,15 @@
       "collection": "billing-api",
       "authType": "oauth2-client-credentials",
       "configKeys": [
-        { "key": "base-url", "type": "url", "required": true },
-        { "key": "client-id", "type": "text", "required": true },
-        { "key": "client-secret", "type": "secret", "required": true }
+        { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
+        { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
+        { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true }
       ]
     },
     {
       "collection": "crm-api",
       "authType": "caller-bearer",
-      "configKeys": [{ "key": "base-url", "type": "url", "required": true }]
+      "configKeys": [{ "key": "base-url", "label": "Base URL", "type": "url", "required": true }]
     }
   ]
 }

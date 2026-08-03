@@ -16,7 +16,7 @@
     {
       "collection": "dispatch-api",
       "authType": "caller-bearer",
-      "configKeys": [{ "key": "base-url", "type": "url", "required": true }]
+      "configKeys": [{ "key": "base-url", "label": "Base URL", "type": "url", "required": true }]
     }
   ]
 }
