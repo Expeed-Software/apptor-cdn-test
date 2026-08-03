@@ -7,7 +7,7 @@
   "exportedBy": "studio@apptor",
   "auth": {
     "required": true,
-    "authProvider": "own-auth",
+    "authProvider": "Apptor-Id",
     "expectedClaims": ["email"],
     "tokenStrategy": "apptor-minted",
     "configKeys": []
