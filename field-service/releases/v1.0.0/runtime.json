@@ -7,9 +7,10 @@
   "exportedBy": "studio@apptor",
   "auth": {
     "required": true,
-    "allowedSources": ["apptor-id"],
+    "authProvider": "okta",
     "expectedClaims": ["email", "sub"],
-    "tokenStrategy": "apptor-minted"
+    "tokenStrategy": "apptor-minted",
+    "configKeys": []
   },
   "integrations": [
     {

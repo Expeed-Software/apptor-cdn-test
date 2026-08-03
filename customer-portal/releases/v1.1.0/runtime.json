@@ -7,9 +7,17 @@
   "exportedBy": "studio@apptor",
   "auth": {
     "required": true,
-    "allowedSources": ["apptor-id", "google"],
+    "authProvider": "okta",
     "expectedClaims": ["email"],
-    "tokenStrategy": "apptor-minted"
+    "tokenStrategy": "apptor-minted",
+    "configKeys": [
+      { "key": "issuer-url", "type": "url", "required": true },
+      { "key": "client-id", "type": "text", "required": true },
+      { "key": "client-secret", "type": "secret", "required": true },
+      { "key": "scopes", "type": "text", "required": false },
+      { "key": "authorize-url", "type": "url", "required": false },
+      { "key": "token-url", "type": "url", "required": false }
+    ]
   },
   "integrations": [
     {
