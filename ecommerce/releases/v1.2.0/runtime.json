@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "app": { "key": "customer-portal" },
+  "version": "1.2.0",
+  "source": { "branch": "main", "commit": "a7b8c9d" },
+  "exportedAt": "2026-07-31T10:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": true,
+    "authProvider": "custom-oidc",
+    "expectedClaims": ["email"],
+    "tokenStrategy": "apptor-minted",
+    "configKeys": [
+      { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": true },
+      { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
+      { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
+      { "key": "scopes", "label": "Scopes", "type": "text", "required": false },
+      { "key": "authorize-url", "label": "Authorize URL", "type": "url", "required": false },
+      { "key": "token-url", "label": "Token URL", "type": "url", "required": false }
+    ]
+  },
+  "integrations": [
+    {
+      "collection": "billing-api",
+      "authType": "oauth2-client-credentials",
+      "configKeys": [
+        { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
+        { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
+        { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true }
+      ]
+    },
+    {
+      "collection": "crm-api",
+      "authType": "caller-bearer",
+      "configKeys": [{ "key": "base-url", "label": "Base URL", "type": "url", "required": true }]
+    },
+    {
+      "collection": "notification-api",
+      "authType": "api-key",
+      "configKeys": [
+        { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
+        { "key": "api-key", "label": "API Key", "type": "secret", "required": true }
+      ]
+    }
+  ]
+}
