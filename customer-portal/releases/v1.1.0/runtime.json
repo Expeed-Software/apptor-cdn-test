@@ -16,7 +16,8 @@
       { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
       { "key": "scopes", "label": "Scopes", "type": "text", "required": false },
       { "key": "authorize-url", "label": "Authorize URL", "type": "url", "required": false },
-      { "key": "token-url", "label": "Token URL", "type": "url", "required": false }
+      { "key": "token-url", "label": "Token URL", "type": "url", "required": false },
+       { "key": "test", "label": "test", "type": "url", "required": false }
     ]
   },
   "integrations": [
