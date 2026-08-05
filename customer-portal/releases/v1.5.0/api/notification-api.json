@@ -1,0 +1,7 @@
+{
+  "collection": "notification-api",
+  "operations": [
+    { "operationId": "sendNotification", "method": "POST", "path": "/notifications" },
+    { "operationId": "listTemplates", "method": "GET", "path": "/templates" }
+  ]
+}

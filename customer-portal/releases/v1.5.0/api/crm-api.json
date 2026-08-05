@@ -1,0 +1,8 @@
+{
+  "collection": "crm-api",
+  "operations": [
+    { "operationId": "listContacts", "method": "GET", "path": "/contacts" },
+    { "operationId": "getContact", "method": "GET", "path": "/contacts/{id}" },
+    { "operationId": "updateContact", "method": "PATCH", "path": "/contacts/{id}" }
+  ]
+}

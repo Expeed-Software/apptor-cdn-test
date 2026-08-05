@@ -1,0 +1,8 @@
+{
+  "collection": "analytics-api",
+  "operations": [
+    { "operationId": "listReports", "method": "GET", "path": "/reports" },
+    { "operationId": "getReport", "method": "GET", "path": "/reports/{id}" },
+    { "operationId": "runQuery", "method": "POST", "path": "/queries" }
+  ]
+}
