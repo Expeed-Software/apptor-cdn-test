@@ -32,7 +32,8 @@
       "authType": "api-key",
       "configKeys": [
         { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
-        { "key": "api-key", "label": "API Key", "type": "secret", "required": true }
+        { "key": "api-key", "label": "API Key", "type": "secret", "required": true },
+        { "key": "api-keytest", "label": "API Key Test", "type": "secret", "required": true }
       ]
     }
   ]
