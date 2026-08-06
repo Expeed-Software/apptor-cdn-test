@@ -1,5 +1,5 @@
 {
-  "app": "ecommerce",
+  "app": "ecommerce-1",
   "schemaVersion": 1,
   "releases": [
     { "version": "1.0.0", "path": "releases/v1.0.0", "exportedAt": "2026-07-01T10:00:00Z" },
