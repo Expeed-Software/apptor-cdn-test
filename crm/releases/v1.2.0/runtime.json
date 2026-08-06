@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "app": { "key": "customer-portal" },
+  "app": { "key": "crm" },
   "version": "1.2.0",
   "source": { "branch": "main", "commit": "a7b8c9d" },
   "exportedAt": "2026-07-31T10:00:00Z",
