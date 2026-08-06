@@ -17,7 +17,7 @@
       {
         "key": "scopes",
         "label": "Scopes",
-        "type": "select",
+        "type": "multiselect",
         "required": true,
         "options": ["openid", "profile", "email", "address", "phone", "offline_access"]
       },
