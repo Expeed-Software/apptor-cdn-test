@@ -11,7 +11,7 @@
     "expectedClaims": ["email"],
     "tokenStrategy": "apptor-minted",
     "configKeys": [
-      { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": false },
+      { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": true },
       { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
       { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
       { "key": "scopes", "label": "Scopes", "type": "text", "required": true },
@@ -24,7 +24,7 @@
       "collection": "billing-api",
       "authType": "oauth2-client-credentials",
       "configKeys": [
-        { "key": "base-url", "label": "Base URL", "type": "url", "required": false },
+        { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
         { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
         { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true }
       ]
