@@ -14,7 +14,13 @@
       { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": true },
       { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
       { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
-      { "key": "scopes", "label": "Scopes", "type": "text", "required": false },
+      {
+        "key": "scopes",
+        "label": "Scopes",
+        "type": "select",
+        "required": false,
+        "options": ["openid", "profile", "email", "address", "phone", "offline_access"]
+      },
       { "key": "authorize-url", "label": "Authorize URL", "type": "url", "required": false },
       { "key": "token-url", "label": "Token URL", "type": "url", "required": false }
     ]
