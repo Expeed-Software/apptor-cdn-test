@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
-  "app": { "key": "field-service" },
+  "app": {
+    "key": "field-service",
+    "displayName": "Field Service",
+    "description": "Work orders, scheduling and technician dispatch."
+  },
   "version": "1.0.0",
   "source": { "branch": "main", "commit": "f1e2d3c" },
   "exportedAt": "2026-06-10T09:00:00Z",

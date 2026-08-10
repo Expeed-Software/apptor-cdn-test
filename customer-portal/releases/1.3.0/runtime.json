@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
-  "app": { "key": "customer-portal" },
+  "app": {
+    "key": "customer-portal",
+    "displayName": "Customer Portal",
+    "description": "Self-service account, orders and support for customers."
+  },
   "version": "1.3.0",
   "source": { "branch": "main", "commit": "b1c2d3e" },
   "exportedAt": "2026-08-05T10:00:00Z",

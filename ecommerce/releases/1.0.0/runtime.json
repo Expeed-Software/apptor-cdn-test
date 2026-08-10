@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
-  "app": { "key": "ecom" },
+  "app": {
+    "key": "ecom",
+    "displayName": "E-commerce",
+    "description": "Product catalogue, cart and checkout for the online store."
+  },
   "version": "1.0.0",
   "source": { "branch": "main", "commit": "a1b2c3d" },
   "exportedAt": "2026-07-01T10:00:00Z",

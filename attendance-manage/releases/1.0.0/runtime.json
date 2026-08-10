@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
-  "app": { "key": "am" },
+  "app": {
+    "key": "am",
+    "displayName": "Attendance Manager",
+    "description": "Shift attendance, leave requests and timesheet approvals."
+  },
   "version": "1.0.0",
   "source": { "branch": "main", "commit": "a1b2c3d" },
   "exportedAt": "2026-07-01T10:00:00Z",

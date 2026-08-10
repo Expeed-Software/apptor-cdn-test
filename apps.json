@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "apps": [
+    {
+      "key": "am",
+      "path": "attendance-manage"
+    },
+    {
+      "key": "app3",
+      "path": "app3"
+    },
+    {
+      "key": "crm",
+      "path": "crm"
+    },
+    {
+      "key": "customer-portal",
+      "path": "customer-portal"
+    },
+    {
+      "key": "ecom",
+      "path": "ecommerce"
+    },
+    {
+      "key": "field-service",
+      "path": "field-service"
+    }
+  ]
+}
