@@ -1,0 +1,7 @@
+{
+  "app": "app3",
+  "schemaVersion": 1,
+  "releases": [
+    { "version": "1.0.0", "path": "releases/1.0.0", "exportedAt": "2026-08-05T00:00:00Z" }
+  ]
+}

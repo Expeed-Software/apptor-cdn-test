@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "key": "app1",
+    "displayName": "App 3",
+    "description": "Scratch app for trying the portal end to end."
+  },
+  "version": "1.0.0",
+  "source": { "branch": "main", "commit": "a3b3c3d" },
+  "exportedAt": "2026-08-05T00:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": false,
+    "authProvider": null,
+    "expectedClaims": [],
+    "tokenStrategy": "apptor-minted",
+    "configKeys": []
+  },
+  "integrations": []
+}

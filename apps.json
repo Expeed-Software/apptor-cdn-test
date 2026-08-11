@@ -24,6 +24,11 @@
     {
       "key": "field-service",
       "path": "field-service"
+    },
+    {
+      "key": "app1",
+      "path": "app1"
     }
+
   ]
 }
