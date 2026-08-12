@@ -15,15 +15,28 @@
     "expectedClaims": ["email"],
     "tokenStrategy": "apptor-minted",
     "configKeys": [
-      { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": true },
+      {
+        "key": "issuer-url",
+        "label": "Issuer URL",
+        "type": "url",
+        "required": true,
+        "description": "The web address people are sent to when they sign in."
+      },
       { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
-      { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
+      {
+        "key": "client-secret",
+        "label": "Client secret",
+        "type": "secret",
+        "required": true,
+        "description": "Stored encrypted. We never show it again — paste a new one to replace it."
+      },
       {
         "key": "scopes",
         "label": "Scopes",
         "type": "multiselect",
         "required": true,
-        "options": ["openid", "profile", "email", "address", "phone", "offline_access"]
+        "options": ["openid", "profile", "email", "address", "phone", "offline_access"],
+        "description": "The pieces of a profile the app needs, such as name and email address."
       },
       { "key": "authorize-url", "label": "Authorize URL", "type": "url", "required": true },
       { "key": "token-url", "label": "Token URL", "type": "url", "required": false }
@@ -34,7 +47,13 @@
       "collection": "billing-api",
       "authType": "oauth2-client-credentials",
       "configKeys": [
-        { "key": "base-url", "label": "Base URL", "type": "url", "required": true },
+        {
+          "key": "base-url",
+          "label": "Base URL",
+          "type": "url",
+          "required": true,
+          "description": "Where this system lives. Ask whoever runs it if you are not sure."
+        },
         { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
         { "key": "client-secret", "label": "Client secret", "type": "secret", "required": false }
       ]
