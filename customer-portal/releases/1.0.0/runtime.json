@@ -64,6 +64,26 @@
         { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
         { "key": "client-secret", "label": "Client secret", "type": "secret", "required": false }
       ]
+    },
+    {
+      "collection": "notifications-api",
+      "authType": "static-bearer",
+      "configKeys": [
+        {
+          "key": "base-url",
+          "label": "Base URL",
+          "type": "url",
+          "required": true,
+          "description": "Where this system lives. Ask whoever runs it if you are not sure."
+        },
+        {
+          "key": "token",
+          "label": "Access token",
+          "type": "secret",
+          "required": true,
+          "description": "Sent as an Authorization: Bearer header on every request."
+        }
+      ]
     }
   ]
 }
