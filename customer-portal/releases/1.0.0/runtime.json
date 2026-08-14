@@ -25,7 +25,7 @@
       { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
       {
         "key": "client-secret",
-        "label": "Client secret",
+        "label": "Client Secret",
         "type": "secret",
         "required": true,
         "description": "Stored encrypted. We never show it again — paste a new one to replace it."
@@ -62,7 +62,7 @@
           "description": "Where this system issues access tokens."
         },
         { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
-        { "key": "client-secret", "label": "Client secret", "type": "secret", "required": false }
+        { "key": "client-secret", "label": "Client Secret", "type": "secret", "required": false }
       ]
     },
     {
@@ -78,7 +78,7 @@
         },
         {
           "key": "token",
-          "label": "Access token",
+          "label": "Access Token",
           "type": "secret",
           "required": true,
           "description": "Sent as an Authorization: Bearer header on every request."

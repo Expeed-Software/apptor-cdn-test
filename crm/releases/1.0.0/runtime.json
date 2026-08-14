@@ -17,7 +17,7 @@
     "configKeys": [
       { "key": "issuer-url", "label": "Issuer URL", "type": "url", "required": false },
       { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
-      { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true },
+      { "key": "client-secret", "label": "Client Secret", "type": "secret", "required": true },
       {
         "key": "scopes",
         "label": "Scopes",
@@ -36,7 +36,7 @@
       "configKeys": [
         { "key": "base-url", "label": "Base URL", "type": "url", "required": false },
         { "key": "client-id", "label": "Client ID", "type": "text", "required": true },
-        { "key": "client-secret", "label": "Client secret", "type": "secret", "required": true }
+        { "key": "client-secret", "label": "Client Secret", "type": "secret", "required": true }
       ]
     }
   ]
