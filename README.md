@@ -33,7 +33,7 @@ apps here differ on purpose, so anything reading the wrong one is caught immedia
 ## Layout
 
 ```
-apps.json                                  <- the index of what is published here
+index.json                                 <- the index of what is published here
 <app>/releases.json                        <- that app's versions, each with its own path
 <app>/releases/<x.y.z>/runtime.json        <- per-version manifest (key, name, description, auth, integrations)
 <app>/releases/<x.y.z>/app/app.json        <- the app definition itself
@@ -43,7 +43,7 @@ apps.json                                  <- the index of what is published her
 Nothing derives a version folder's name: every consumer reads `path` out of `releases.json`, which is
 why dropping the old `v` prefix needed no code change anywhere.
 
-### `apps.json` — why it exists
+### `index.json` — why it exists
 
 Static hosting cannot be listed. nginx defaults to `autoindex off`, and S3 static hosting,
 CloudFront, GitHub Pages, Netlify, Cloudflare Pages and Azure SWA offer no directory listing at all —
