@@ -5,6 +5,7 @@
     "displayName": "Customer Portal",
     "description": "Self-service account, orders and support for customers."
   },
+  "isMultiTenant": true,
   "version": "1.5.0",
   "source": { "branch": "main", "commit": "d3e4f5a" },
   "exportedAt": "2026-08-19T10:00:00Z",
