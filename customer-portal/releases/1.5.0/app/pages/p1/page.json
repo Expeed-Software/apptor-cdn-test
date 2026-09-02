@@ -1,0 +1,37 @@
+{
+  "components": [
+    {
+      "name": "p1",
+      "type": "page",
+      "props": { "title": "p1", "description": "A new page" },
+      "styles": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "align-items": "start",
+        "align-content": "start",
+        "width": "100%",
+        "min-width": "0",
+        "min-height": "0",
+        "overflow": "auto",
+        "height": "100%"
+      },
+      "slots": [
+        {
+          "selector": "[content]",
+          "components": [
+            {
+              "name": "p1Button",
+              "type": "button",
+              "styleGroup": "button::primary",
+              "props": { "label": "Click me" },
+              "styles": {},
+              "slots": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}
