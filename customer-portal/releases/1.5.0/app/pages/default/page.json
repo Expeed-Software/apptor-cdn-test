@@ -15,21 +15,18 @@
         "overflow": "auto",
         "height": "100%"
       },
-      "slots": [
-        {
-          "selector": "[content]",
-          "components": [
-            {
-              "name": "welcomeButton",
-              "type": "button",
-              "styleGroup": "button::primary",
-              "props": { "label": "Click me" },
-              "styles": {},
-              "slots": []
-            }
-          ]
-        }
-      ]
+      "slots": {
+        "content": [
+          {
+            "name": "welcomeButton",
+            "type": "button",
+            "styleGroup": "primary",
+            "props": { "label": "Click me" },
+            "styles": {},
+            "slots": []
+          }
+        ]
+      }
     }
   ],
   "variables": [],
