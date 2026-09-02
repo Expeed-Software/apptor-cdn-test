@@ -1,6 +1,6 @@
 {
   "components": [
-    { "name": "p1Button", "type": "button", "props": { "label": "Click me" }, "styles": {}, "slots": [] }
+    { "name": "p1Button", "type": "button", "styleGroup": "secondary", "props": { "label": "Page 1" }, "styles": {}, "slots": [] }
   ],
   "variables": [],
   "overlays": []

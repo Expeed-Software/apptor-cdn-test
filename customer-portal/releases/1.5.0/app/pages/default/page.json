@@ -1,6 +1,6 @@
 {
   "components": [
-    { "name": "welcomeButton", "type": "button", "props": { "label": "Click me" }, "styles": {}, "slots": [] }
+    { "name": "defaultButton", "type": "button", "styleGroup": "primary", "props": { "label": "Default Page" }, "styles": {}, "slots": [] }
   ],
   "variables": [],
   "overlays": []
