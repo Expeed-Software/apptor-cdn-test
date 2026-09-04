@@ -1,0 +1,29 @@
+{
+  "components": [
+    { "name": "heading", "type": "text", "props": { "text": "Large Page" }, "styles": { "font-size": "32px", "font-weight": "700" }, "slots": [] },
+    { "name": "intro", "type": "text", "props": { "text": "This page exists to test a larger, more varied component tree." }, "styles": {}, "slots": [] },
+    { "name": "div1", "type": "divider", "props": { "label": "Buttons" }, "styles": {}, "slots": [] },
+    { "name": "btnPrimary", "type": "button", "styleGroup": "primary", "props": { "label": "Primary" }, "styles": {}, "slots": [] },
+    { "name": "btnSecondary", "type": "button", "styleGroup": "secondary", "props": { "label": "Secondary" }, "styles": {}, "slots": [] },
+    { "name": "btnDefault", "type": "button", "props": { "label": "Default" }, "styles": {}, "slots": [] },
+    { "name": "div2", "type": "divider", "props": { "label": "Card" }, "styles": {}, "slots": [] },
+    {
+      "name": "demoCard",
+      "type": "card",
+      "props": { "title": "Actions", "subtitle": "Buttons inside a card" },
+      "styles": {},
+      "slots": [
+        { "name": "cardBtn1", "type": "button", "styleGroup": "primary", "props": { "label": "Card Primary" }, "styles": {}, "slots": [] },
+        { "name": "cardBtn2", "type": "button", "styleGroup": "secondary", "props": { "label": "Card Secondary" }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "div3", "type": "divider", "props": { "label": "More content" }, "styles": {}, "slots": [] },
+    { "name": "paragraph1", "type": "text", "props": { "text": "Section 1 of repeated content to make this page long enough to scroll." }, "styles": {}, "slots": [] },
+    { "name": "paragraph2", "type": "text", "props": { "text": "Section 2 of repeated content to make this page long enough to scroll." }, "styles": {}, "slots": [] },
+    { "name": "paragraph3", "type": "text", "props": { "text": "Section 3 of repeated content to make this page long enough to scroll." }, "styles": {}, "slots": [] },
+    { "name": "paragraph4", "type": "text", "props": { "text": "Section 4 of repeated content to make this page long enough to scroll." }, "styles": {}, "slots": [] },
+    { "name": "paragraph5", "type": "text", "props": { "text": "Section 5 of repeated content to make this page long enough to scroll." }, "styles": {}, "slots": [] }
+  ],
+  "variables": [],
+  "overlays": []
+}
