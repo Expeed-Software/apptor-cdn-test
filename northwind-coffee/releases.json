@@ -1,0 +1,7 @@
+{
+  "app": "northwind-coffee",
+  "schemaVersion": 1,
+  "releases": [
+    { "version": "1.0.0", "path": "releases/1.0.0", "exportedAt": "2026-09-04T12:00:00Z" }
+  ]
+}

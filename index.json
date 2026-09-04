@@ -28,6 +28,10 @@
     {
       "key": "app1",
       "path": "app1"
+    },
+    {
+      "key": "northwind-coffee",
+      "path": "northwind-coffee"
     }
 
   ]

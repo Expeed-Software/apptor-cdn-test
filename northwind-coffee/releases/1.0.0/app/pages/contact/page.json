@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "name": "contact-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "contact-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Visit Us" }, "styles": {}, "slots": [] },
+        { "name": "contact-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Three cafes, one standard. Open daily, 6am to 6pm." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "locations-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        {
+          "name": "locations-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "loc-riverside", "type": "card", "props": { "title": "Riverside", "subtitle": "The original", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-riverside-text", "type": "text", "props": { "text": "142 Riverside Ave — opened 2017, still our roasting home base." }, "styles": {}, "slots": [] } ] },
+            { "name": "loc-downtown", "type": "card", "props": { "title": "Downtown", "subtitle": "Our busiest counter", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-downtown-text", "type": "text", "props": { "text": "27 Market Street — grab-and-go, with seating upstairs." }, "styles": {}, "slots": [] } ] },
+            { "name": "loc-old-mill", "type": "card", "props": { "title": "Old Mill District", "subtitle": "The quiet one", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-old-mill-text", "type": "text", "props": { "text": "8 Foundry Row — good for laptops, better for conversation." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "form-section", "type": "container", "props": { "role": "region" }, "styles": { "max-width": "480px", "margin": "0 auto" },
+      "slots": [
+        { "name": "form-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Get in touch" }, "styles": {}, "slots": [] },
+        { "name": "form-name", "type": "text-input", "props": { "label": "Name" }, "styles": { "margin-bottom": "12px" }, "slots": [] },
+        { "name": "form-email", "type": "text-input", "props": { "label": "Email", "type": "email" }, "styles": { "margin-bottom": "12px" }, "slots": [] },
+        { "name": "form-message", "type": "textarea", "props": { "label": "Message" }, "styles": { "margin-bottom": "16px" }, "slots": [] },
+        { "name": "form-submit", "type": "button", "props": { "label": "Send Message", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

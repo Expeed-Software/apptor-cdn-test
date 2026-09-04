@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "key": "northwind-coffee",
+    "displayName": "Northwind Coffee Co.",
+    "description": "Marketing site for Northwind Coffee Co. — menu, story and cafe locations."
+  },
+  "isMultiTenant": false,
+  "version": "1.0.0",
+  "source": { "branch": "main", "commit": "0000000" },
+  "exportedAt": "2026-09-04T12:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": false,
+    "authProvider": "apptor-id",
+    "expectedClaims": [],
+    "tokenStrategy": "apptor-minted",
+    "configKeys": []
+  },
+  "integrations": []
+}
