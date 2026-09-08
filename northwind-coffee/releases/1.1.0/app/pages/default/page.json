@@ -1,0 +1,66 @@
+{
+  "components": [
+    {
+      "name": "hero", "type": "container", "styleGroup": "hero", "props": { "role": "banner" }, "styles": {},
+      "slots": [
+        { "name": "hero-eyebrow", "type": "text", "styleGroup": "eyebrow", "props": { "text": "SMALL-BATCH ROASTERY · EST. 2014" }, "styles": {}, "slots": [] },
+        { "name": "hero-title", "type": "text", "styleGroup": "hero-title", "props": { "text": "Northwind Coffee Co." }, "styles": {}, "slots": [] },
+        { "name": "hero-tagline", "type": "text", "styleGroup": "hero-tagline", "props": { "text": "Ethically sourced beans, roasted in small batches every week and poured with care at our four neighborhood cafes." }, "styles": {}, "slots": [] },
+        {
+          "name": "hero-actions", "type": "container", "props": {}, "styles": {},
+          "slots": [
+            { "name": "hero-cta-menu", "type": "button", "props": { "label": "View the Menu", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] },
+            { "name": "hero-cta-visit", "type": "button", "props": { "label": "Find a Cafe", "severity": "secondary", "variant": "outlined", "size": "large" }, "styles": {}, "slots": [] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "values-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "values-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Why people come back" }, "styles": {}, "slots": [] },
+        {
+          "name": "values-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "24px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "value-card-1", "type": "card", "props": { "title": "Direct-Trade Beans", "subtitle": "Sourced from four family farms", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-1-text", "type": "text", "props": { "text": "We visit our growers every year and pay well above fair-trade minimums, so the farms we work with can keep investing in quality." }, "styles": {}, "slots": [] }
+            ] },
+            { "name": "value-card-2", "type": "card", "props": { "title": "Roasted Weekly", "subtitle": "Never more than 10 days off the roaster", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-2-text", "type": "text", "props": { "text": "Our roastmaster runs small batches every Tuesday and Friday, so what you drink today was roasted this week, not this quarter." }, "styles": {}, "slots": [] }
+            ] },
+            { "name": "value-card-3", "type": "card", "props": { "title": "Neighborhood Cafes", "subtitle": "Four locations, one standard", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-3-text", "type": "text", "props": { "text": "From Riverside to the Old Mill District to our new Harborview counter, every cafe pulls the same recipe and trains on the same bar." }, "styles": {}, "slots": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "gallery-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "gallery-title", "type": "text", "styleGroup": "section-title", "props": { "text": "From bean to cup" }, "styles": {}, "slots": [] },
+        {
+          "name": "gallery-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "16px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "gallery-img-1", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80", "alt": "Coffee beans being sorted", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] },
+            { "name": "gallery-img-2", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80", "alt": "Barista pouring latte art", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] },
+            { "name": "gallery-img-3", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80", "alt": "Cozy cafe interior", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-3", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "cta-section", "type": "container", "styleGroup": "cta-section", "props": { "role": "region" }, "styles": { "text-align": "center", "padding": "48px 24px" },
+      "slots": [
+        { "name": "cta-title", "type": "text", "props": { "text": "Stop by today" }, "styles": { "font-size": "2rem", "font-weight": "700", "color": "#ffffff" }, "slots": [] },
+        { "name": "cta-text", "type": "text", "props": { "text": "Open daily, 6am to 6pm. First pour-over is on us for new faces at the counter." }, "styles": { "color": "#e0c7a8" }, "slots": [] },
+        { "name": "cta-button", "type": "button", "props": { "label": "See Locations & Hours", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

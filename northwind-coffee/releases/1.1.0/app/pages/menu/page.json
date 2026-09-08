@@ -1,0 +1,46 @@
+{
+  "components": [
+    {
+      "name": "menu-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "menu-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Menu" }, "styles": {}, "slots": [] },
+        { "name": "menu-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Espresso, drip, and a short list of pastries baked fresh each morning." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "coffee-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "coffee-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Coffee" }, "styles": {}, "slots": [] },
+        {
+          "name": "coffee-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "item-espresso", "type": "card", "props": { "title": "Espresso", "subtitle": "$3.25", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-espresso-text", "type": "text", "props": { "text": "A double shot, pulled from our house blend." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-pourover", "type": "card", "props": { "title": "Pour-Over", "subtitle": "$4.75", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-pourover-text", "type": "text", "props": { "text": "Single-origin, brewed to order — ask what's on rotation." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-latte", "type": "card", "props": { "title": "Latte", "subtitle": "$4.50", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-latte-text", "type": "text", "props": { "text": "Espresso and steamed milk, oat and almond available." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-cappuccino", "type": "card", "props": { "title": "Cappuccino", "subtitle": "$4.25", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-cappuccino-text", "type": "text", "props": { "text": "Equal parts espresso, steamed milk, and foam." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-cortado", "type": "card", "props": { "title": "Cortado", "subtitle": "$4.00", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-cortado-text", "type": "text", "props": { "text": "Espresso cut with a small amount of warm milk." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-coldbrew", "type": "card", "props": { "title": "Cold Brew", "subtitle": "$4.50", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-coldbrew-text", "type": "text", "props": { "text": "Steeped 18 hours, served over ice." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "pastry-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "pastry-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Pastries" }, "styles": {}, "slots": [] },
+        {
+          "name": "pastry-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "item-croissant", "type": "card", "props": { "title": "Butter Croissant", "subtitle": "$3.75", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-croissant-text", "type": "text", "props": { "text": "Baked fresh every morning, gone by ten." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-scone", "type": "card", "props": { "title": "Blueberry Scone", "subtitle": "$3.50", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-scone-text", "type": "text", "props": { "text": "Made with berries from the Saturday farmers market." }, "styles": {}, "slots": [] } ] },
+            { "name": "item-banana-bread", "type": "card", "props": { "title": "Banana Bread", "subtitle": "$3.25", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "item-banana-bread-text", "type": "text", "props": { "text": "A slightly-too-popular house recipe." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

@@ -1,0 +1,35 @@
+{
+  "variables": {
+    "--canvas-primary-50": "#faf6f1",
+    "--canvas-primary-100": "#f0e4d6",
+    "--canvas-primary-200": "#e0c7a8",
+    "--canvas-primary-300": "#cda474",
+    "--canvas-primary-400": "#b8824a",
+    "--canvas-primary-500": "#8a5a2b",
+    "--canvas-primary-600": "#6f4622",
+    "--canvas-primary-700": "#5a381c",
+    "--canvas-primary-800": "#452b16",
+    "--canvas-primary-900": "#332012",
+    "--canvas-primary-950": "#1f130a",
+    "--canvas-primary-color-alpha": "rgba(138, 90, 43, 0.16)",
+    "--canvas-primary-contrast-color": "#ffffff",
+    "--canvas-radius-xs": "4px",
+    "--canvas-radius-sm": "6px",
+    "--canvas-radius-md": "10px",
+    "--canvas-radius-lg": "16px",
+    "--canvas-radius-xl": "24px",
+    "--canvas-transition-duration": "0.2s",
+    "--canvas-shadow": "0 2px 8px rgba(51, 32, 18, 0.12)",
+    "--canvas-shadow-raised": "0 3px 6px rgba(51, 32, 18, 0.18)",
+    "--canvas-shadow-raised-hover": "0 5px 10px rgba(51, 32, 18, 0.22)",
+    "--canvas-light-surface-0": "#ffffff",
+    "--canvas-light-surface-50": "#fbf8f4",
+    "--canvas-light-surface-100": "#f0e4d6",
+    "--canvas-font-primary": "Fraunces"
+  },
+  "fonts": {
+    "Fraunces": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;800&display=swap",
+    "Inter": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+  },
+  "primaryFont": "Inter"
+}

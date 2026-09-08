@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "name": "about-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "about-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Our Story" }, "styles": {}, "slots": [] },
+        { "name": "about-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Started in a garage in 2014. Still roasting our own beans." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "story-section", "type": "container", "props": { "role": "region" }, "styles": { "max-width": "720px", "margin": "0 auto" },
+      "slots": [
+        { "name": "story-image", "type": "image", "styleGroup": "story-image", "props": { "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80", "alt": "Founders roasting coffee in the early days", "objectFit": "cover" }, "styles": { "width": "100%", "height": "320px", "border-radius": "10px" }, "slots": [] },
+        { "name": "story-p1", "type": "text", "props": { "text": "Northwind Coffee Co. started with a two-kilo sample roaster in Ana and Miguel Torres' garage. They were roasting for friends and a couple of local restaurants long before there was a storefront." }, "styles": { "margin-top": "16px" }, "slots": [] },
+        { "name": "story-p2", "type": "text", "props": { "text": "Twelve years later, we still roast every bag ourselves, in small batches, twice a week. We buy directly from four family farms we visit in person every year, and we pay well above fair-trade minimums." }, "styles": {}, "slots": [] },
+        { "name": "story-p3", "type": "text", "props": { "text": "The cafes came later — first Riverside in 2017, then downtown, then the Old Mill District in 2022. Same roast, same recipes, same people behind the counter who actually care what's in your cup." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "team-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "team-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Who's behind the counter" }, "styles": {}, "slots": [] },
+        {
+          "name": "team-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "team-card-1", "type": "card", "props": { "title": "Ana Torres", "subtitle": "Co-Founder & Head Roaster", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-1-text", "type": "text", "props": { "text": "Runs the roaster and picks every farm we work with." }, "styles": {}, "slots": [] } ] },
+            { "name": "team-card-2", "type": "card", "props": { "title": "Miguel Torres", "subtitle": "Co-Founder & Operations", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-2-text", "type": "text", "props": { "text": "Keeps all four cafes running the same standard." }, "styles": {}, "slots": [] } ] },
+            { "name": "team-card-3", "type": "card", "props": { "title": "Priya Nair", "subtitle": "Head Barista Trainer", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-3-text", "type": "text", "props": { "text": "Trains every new hire on the bar before they pull a single shot for a customer." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}
