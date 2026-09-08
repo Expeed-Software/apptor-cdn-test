@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "key": "meridian-coworking",
+    "displayName": "Meridian Coworking",
+    "description": "Flexible workspace membership plans across three city locations."
+  },
+  "isMultiTenant": false,
+  "version": "1.0.0",
+  "source": { "branch": "main", "commit": "0000000" },
+  "exportedAt": "2026-09-08T10:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": false,
+    "authProvider": "apptor-id",
+    "expectedClaims": [],
+    "tokenStrategy": "apptor-minted",
+    "configKeys": []
+  },
+  "integrations": []
+}

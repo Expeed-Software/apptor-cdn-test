@@ -1,0 +1,43 @@
+{
+  "components": [
+    {
+      "name": "plans-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "plans-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Membership Plans" }, "styles": {}, "slots": [] },
+        { "name": "plans-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Simple pricing, no long-term contracts." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "desks-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "desks-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Desks" }, "styles": {}, "slots": [] },
+        {
+          "name": "desks-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "plan-hotdesk", "type": "card", "props": { "title": "Hot Desk", "subtitle": "$199/mo", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "plan-hotdesk-text", "type": "text", "props": { "text": "Any open seat, any day. Includes 2 meeting-room hours a month." }, "styles": {}, "slots": [] } ] },
+            { "name": "plan-dedicated", "type": "card", "props": { "title": "Dedicated Desk", "subtitle": "$349/mo", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "plan-dedicated-text", "type": "text", "props": { "text": "Your own desk, same spot every day. Includes 5 meeting-room hours a month." }, "styles": {}, "slots": [] } ] },
+            { "name": "plan-office", "type": "card", "props": { "title": "Private Office", "subtitle": "$899/mo", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "plan-office-text", "type": "text", "props": { "text": "A lockable office for up to 4 people. Includes unlimited meeting-room hours." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "addons-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "addons-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Add-ons" }, "styles": {}, "slots": [] },
+        {
+          "name": "addons-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "addon-meeting", "type": "card", "props": { "title": "Extra Meeting Hours", "subtitle": "$15/hr", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "addon-meeting-text", "type": "text", "props": { "text": "Book any room past your plan's included hours." }, "styles": {}, "slots": [] } ] },
+            { "name": "addon-mail", "type": "card", "props": { "title": "Mail Handling", "subtitle": "$25/mo", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "addon-mail-text", "type": "text", "props": { "text": "A business mailing address with same-day scan-and-forward." }, "styles": {}, "slots": [] } ] },
+            { "name": "addon-guest", "type": "card", "props": { "title": "Guest Passes", "subtitle": "$10/pass", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "addon-guest-text", "type": "text", "props": { "text": "Bring a client or collaborator in for the day." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

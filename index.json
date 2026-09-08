@@ -32,6 +32,10 @@
     {
       "key": "northwind-coffee",
       "path": "northwind-coffee"
+    },
+    {
+      "key": "meridian-coworking",
+      "path": "meridian-coworking"
     }
 
   ]

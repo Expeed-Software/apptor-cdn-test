@@ -1,0 +1,35 @@
+{
+  "variables": {
+    "--canvas-primary-50": "#f0f9fa",
+    "--canvas-primary-100": "#d9f0f2",
+    "--canvas-primary-200": "#b3e0e5",
+    "--canvas-primary-300": "#7cc9d1",
+    "--canvas-primary-400": "#3fa8b3",
+    "--canvas-primary-500": "#1f8894",
+    "--canvas-primary-600": "#146b76",
+    "--canvas-primary-700": "#10525c",
+    "--canvas-primary-800": "#0c3d45",
+    "--canvas-primary-900": "#082830",
+    "--canvas-primary-950": "#04161a",
+    "--canvas-primary-color-alpha": "rgba(31, 136, 148, 0.16)",
+    "--canvas-primary-contrast-color": "#ffffff",
+    "--canvas-radius-xs": "4px",
+    "--canvas-radius-sm": "6px",
+    "--canvas-radius-md": "10px",
+    "--canvas-radius-lg": "16px",
+    "--canvas-radius-xl": "24px",
+    "--canvas-transition-duration": "0.2s",
+    "--canvas-shadow": "0 2px 8px rgba(8, 40, 48, 0.12)",
+    "--canvas-shadow-raised": "0 3px 6px rgba(8, 40, 48, 0.18)",
+    "--canvas-shadow-raised-hover": "0 5px 10px rgba(8, 40, 48, 0.22)",
+    "--canvas-light-surface-0": "#ffffff",
+    "--canvas-light-surface-50": "#f7fbfb",
+    "--canvas-light-surface-100": "#d9f0f2",
+    "--canvas-font-primary": "Sora"
+  },
+  "fonts": {
+    "Sora": "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap",
+    "Inter": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+  },
+  "primaryFont": "Inter"
+}

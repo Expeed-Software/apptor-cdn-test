@@ -1,0 +1,66 @@
+{
+  "components": [
+    {
+      "name": "hero", "type": "container", "styleGroup": "hero", "props": { "role": "banner" }, "styles": {},
+      "slots": [
+        { "name": "hero-eyebrow", "type": "text", "styleGroup": "eyebrow", "props": { "text": "FLEXIBLE WORKSPACE · 3 LOCATIONS" }, "styles": {}, "slots": [] },
+        { "name": "hero-title", "type": "text", "styleGroup": "hero-title", "props": { "text": "Meridian Coworking" }, "styles": {}, "slots": [] },
+        { "name": "hero-tagline", "type": "text", "styleGroup": "hero-tagline", "props": { "text": "Bright, quiet, well-connected space to do your best work — by the day, the desk, or the month." }, "styles": {}, "slots": [] },
+        {
+          "name": "hero-actions", "type": "container", "props": {}, "styles": {},
+          "slots": [
+            { "name": "hero-cta-plans", "type": "button", "props": { "label": "View Plans", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] },
+            { "name": "hero-cta-tour", "type": "button", "props": { "label": "Book a Tour", "severity": "secondary", "variant": "outlined", "size": "large" }, "styles": {}, "slots": [] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "values-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "values-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Why teams choose Meridian" }, "styles": {}, "slots": [] },
+        {
+          "name": "values-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "24px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "value-card-1", "type": "card", "props": { "title": "High-Speed Everything", "subtitle": "Gig fiber, zero dead zones", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-1-text", "type": "text", "props": { "text": "Every desk gets wired and wireless gigabit, with a backup connection that fails over automatically if the primary line ever drops." }, "styles": {}, "slots": [] }
+            ] },
+            { "name": "value-card-2", "type": "card", "props": { "title": "Book by the Hour", "subtitle": "No long-term contracts", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-2-text", "type": "text", "props": { "text": "Meeting rooms and hot desks book in the app in seconds. Upgrade, downgrade, or cancel your plan any month, no notice period." }, "styles": {}, "slots": [] }
+            ] },
+            { "name": "value-card-3", "type": "card", "props": { "title": "Real Coffee, Real Quiet", "subtitle": "A cafe bar and library-quiet floors", "showHeader": true }, "styles": { "flex": "1", "min-width": "260px" }, "slots": [
+              { "name": "value-card-3-text", "type": "text", "props": { "text": "Espresso bar on the ground floor for conversations, phone-booth pods and a quiet floor upstairs for everything else." }, "styles": {}, "slots": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "gallery-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "gallery-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Spaces built for focus" }, "styles": {}, "slots": [] },
+        {
+          "name": "gallery-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "16px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "gallery-img-1", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80", "alt": "Open-plan coworking desks", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] },
+            { "name": "gallery-img-2", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?w=600&q=80", "alt": "Private meeting room", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] },
+            { "name": "gallery-img-3", "type": "image", "styleGroup": "gallery-image", "props": { "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80", "alt": "Cafe bar seating area", "objectFit": "cover" }, "styles": { "flex": "1", "min-width": "220px", "height": "220px", "border-radius": "10px" }, "slots": [] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-3", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "cta-section", "type": "container", "styleGroup": "cta-section", "props": { "role": "region" }, "styles": { "text-align": "center", "padding": "48px 24px" },
+      "slots": [
+        { "name": "cta-title", "type": "text", "props": { "text": "Ready to move in?" }, "styles": { "font-size": "2rem", "font-weight": "700", "color": "#ffffff" }, "slots": [] },
+        { "name": "cta-text", "type": "text", "props": { "text": "Tour any location this week — no commitment, no pressure." }, "styles": { "color": "#b3e0e5" }, "slots": [] },
+        { "name": "cta-button", "type": "button", "props": { "label": "Schedule a Tour", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

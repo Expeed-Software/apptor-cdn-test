@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "name": "contact-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "contact-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Visit Us" }, "styles": {}, "slots": [] },
+        { "name": "contact-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Three locations, one standard. Open weekdays 7am–9pm." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "locations-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        {
+          "name": "locations-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "loc-downtown", "type": "card", "props": { "title": "Downtown", "subtitle": "The original", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-downtown-text", "type": "text", "props": { "text": "220 Meridian Ave — opened 2018, three floors, the espresso bar everyone recognizes." }, "styles": {}, "slots": [] } ] },
+            { "name": "loc-riverside", "type": "card", "props": { "title": "Riverside", "subtitle": "Our quietest floor", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-riverside-text", "type": "text", "props": { "text": "14 Wharf Lane — best natural light, best for calls, best for deep work." }, "styles": {}, "slots": [] } ] },
+            { "name": "loc-uptown", "type": "card", "props": { "title": "Uptown", "subtitle": "The newest one", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "loc-uptown-text", "type": "text", "props": { "text": "56 Crescent Road — our newest floor, with the largest private offices." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "form-section", "type": "container", "props": { "role": "region" }, "styles": { "max-width": "480px", "margin": "0 auto" },
+      "slots": [
+        { "name": "form-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Get in touch" }, "styles": {}, "slots": [] },
+        { "name": "form-name", "type": "text-input", "props": { "label": "Name" }, "styles": { "margin-bottom": "12px" }, "slots": [] },
+        { "name": "form-email", "type": "text-input", "props": { "label": "Email", "type": "email" }, "styles": { "margin-bottom": "12px" }, "slots": [] },
+        { "name": "form-message", "type": "textarea", "props": { "label": "Message" }, "styles": { "margin-bottom": "16px" }, "slots": [] },
+        { "name": "form-submit", "type": "button", "props": { "label": "Send Message", "severity": "primary", "size": "large" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

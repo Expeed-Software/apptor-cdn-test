@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "name": "about-header", "type": "container", "styleGroup": "page-header", "props": { "role": "banner" }, "styles": { "padding": "48px 24px" },
+      "slots": [
+        { "name": "about-title", "type": "text", "styleGroup": "page-title", "props": { "text": "Our Story" }, "styles": {}, "slots": [] },
+        { "name": "about-subtitle", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Started with one floor and a bad Wi-Fi router in 2018." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-1", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "story-section", "type": "container", "props": { "role": "region" }, "styles": { "max-width": "720px", "margin": "0 auto" },
+      "slots": [
+        { "name": "story-image", "type": "image", "styleGroup": "story-image", "props": { "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80", "alt": "Founders in the first Meridian office", "objectFit": "cover" }, "styles": { "width": "100%", "height": "320px", "border-radius": "10px" }, "slots": [] },
+        { "name": "story-p1", "type": "text", "props": { "text": "Meridian started on the third floor of a converted print works, with twelve desks and Wi-Fi that dropped every afternoon. Priya and Owen were both freelancing and tired of working from cafes." }, "styles": { "margin-top": "16px" }, "slots": [] },
+        { "name": "story-p2", "type": "text", "props": { "text": "Eight years later, we run three floors across three neighborhoods, but the standard hasn't moved: real desks, real quiet, and a network that never drops mid-call." }, "styles": {}, "slots": [] },
+        { "name": "story-p3", "type": "text", "props": { "text": "Riverside opened in 2020, Uptown in 2023. Same layout philosophy in every location — quiet floor up top, cafe energy on the ground floor, meeting rooms you can actually book without a fight." }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "divider-2", "type": "divider", "props": {}, "styles": {}, "slots": [] },
+    {
+      "name": "team-section", "type": "container", "props": { "role": "region" }, "styles": {},
+      "slots": [
+        { "name": "team-title", "type": "text", "styleGroup": "section-title", "props": { "text": "Who keeps the lights on" }, "styles": {}, "slots": [] },
+        {
+          "name": "team-grid", "type": "container", "props": {}, "styles": { "display": "flex", "gap": "20px", "flex-wrap": "wrap" },
+          "slots": [
+            { "name": "team-card-1", "type": "card", "props": { "title": "Priya Shah", "subtitle": "Co-Founder & Community", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-1-text", "type": "text", "props": { "text": "Knows every member by name and what they're working on." }, "styles": {}, "slots": [] } ] },
+            { "name": "team-card-2", "type": "card", "props": { "title": "Owen Reyes", "subtitle": "Co-Founder & Operations", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-2-text", "type": "text", "props": { "text": "Keeps all three locations running the same standard." }, "styles": {}, "slots": [] } ] },
+            { "name": "team-card-3", "type": "card", "props": { "title": "Dana Kowalski", "subtitle": "Network & Facilities", "showHeader": true }, "styles": { "flex": "1", "min-width": "220px" }, "slots": [ { "name": "team-card-3-text", "type": "text", "props": { "text": "The reason the Wi-Fi has not dropped once since 2021." }, "styles": {}, "slots": [] } ] }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}
