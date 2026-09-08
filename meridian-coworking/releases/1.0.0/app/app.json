@@ -1,3 +1,11 @@
 {
-  "pages": []
+  "pages": [],
+  "config": {
+    "defaultLocale": "en",
+    "title": "Meridian Coworking",
+    "defaultTheme": "meridian-coworking-theme",
+    "directionRtl": false,
+    "loginPath": null,
+    "securityType": null
+  }
 }
