@@ -17,5 +17,13 @@
     "tokenStrategy": "apptor-minted",
     "configKeys": []
   },
-  "integrations": []
+  "integrations": [],
+  "config": {
+    "defaultLocale": "en",
+    "title": "Northwind Coffee Co.",
+    "defaultTheme": "northwind-coffee-theme",
+    "directionRtl": false,
+    "loginPath": null,
+    "securityType": null
+  }
 }
