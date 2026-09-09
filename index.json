@@ -36,6 +36,10 @@
     {
       "key": "meridian-coworking",
       "path": "meridian-coworking"
+    },
+    {
+      "key": "runner-metadata-verify-2",
+      "path": "runner-metadata-verify-2"
     }
 
   ]

@@ -1,0 +1,245 @@
+{
+  "components": [
+    {
+      "name": "nav-bar",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "align-items": "center",
+        "justify-content": "space-between",
+        "padding": "20px 40px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "brand",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#f5efe3",
+              "--canvas-text-font-size": "22px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "nav-links",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "row", "gap": "8px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "nav-home",
+                  "type": "button",
+                  "props": { "label": "Home" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-about",
+                  "type": "button",
+                  "props": { "label": "About" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/about" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-books",
+                  "type": "button",
+                  "props": { "label": "Books" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/books" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-contact",
+                  "type": "button",
+                  "props": { "label": "Contact" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/contact" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "contact-hero",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "12px",
+        "padding": "56px 24px",
+        "--canvas-container-background": "#f5efe3"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "contact-title",
+            "type": "text",
+            "props": { "text": "Visit Us" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "40px",
+              "--canvas-text-font-weight": "700",
+              "--canvas-text-text-align": "center"
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-1", "type": "divider" },
+    {
+      "name": "contact-body",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "flex-wrap": "wrap",
+        "gap": "40px",
+        "padding": "48px 64px",
+        "--canvas-container-background": "#ffffff"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "contact-details",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "column", "gap": "16px", "flex": "1", "min-width": "240px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "contact-details-title",
+                  "type": "text",
+                  "props": { "text": "Address & Hours" },
+                  "styles": { "--canvas-text-text-color": "#2d4a3a", "--canvas-text-font-size": "22px", "--canvas-text-font-weight": "700" }
+                },
+                {
+                  "name": "contact-address",
+                  "type": "text",
+                  "props": { "text": "214 Elm Street\nRiverside, WA 98052" },
+                  "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+                },
+                {
+                  "name": "contact-hours",
+                  "type": "text",
+                  "props": { "text": "Monday – Sunday: 7am – 8pm\nBook club: Tuesdays, 6:30pm\nStory hour: Saturdays, 10am" },
+                  "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+                },
+                {
+                  "name": "contact-phone",
+                  "type": "text",
+                  "props": { "text": "(206) 555-0148 · hello@lanternandleaf.example" },
+                  "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+                }
+              ]
+            }
+          },
+          {
+            "name": "contact-form",
+            "type": "container",
+            "styles": {
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "12px",
+              "flex": "1",
+              "min-width": "260px",
+              "padding": "24px",
+              "--canvas-container-background": "#f5efe3"
+            },
+            "slots": {
+              "default": [
+                {
+                  "name": "contact-form-title",
+                  "type": "text",
+                  "props": { "text": "Send us a note" },
+                  "styles": { "--canvas-text-text-color": "#2d4a3a", "--canvas-text-font-size": "20px", "--canvas-text-font-weight": "700" }
+                },
+                {
+                  "name": "contact-form-name",
+                  "type": "text-input",
+                  "props": { "placeholder": "Your name" }
+                },
+                {
+                  "name": "contact-form-email",
+                  "type": "text-input",
+                  "props": { "placeholder": "Your email" }
+                },
+                {
+                  "name": "contact-form-message",
+                  "type": "textarea",
+                  "props": { "placeholder": "What's on your mind?" }
+                },
+                {
+                  "name": "contact-form-submit",
+                  "type": "button",
+                  "props": { "label": "Send Message" },
+                  "styles": { "--canvas-button-background": "#2d4a3a", "--canvas-button-text-color": "#f5efe3" }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-2", "type": "divider" },
+    {
+      "name": "footer",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "4px",
+        "padding": "24px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "footer-text",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf · 214 Elm Street · Open daily 7am–8pm" },
+            "styles": { "--canvas-text-text-color": "#f5efe3", "--canvas-text-font-size": "14px", "--canvas-text-text-align": "center" }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

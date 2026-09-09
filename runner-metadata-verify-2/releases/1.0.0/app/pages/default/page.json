@@ -1,0 +1,300 @@
+{
+  "components": [
+    {
+      "name": "nav-bar",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "align-items": "center",
+        "justify-content": "space-between",
+        "padding": "20px 40px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "brand",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#f5efe3",
+              "--canvas-text-font-size": "22px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "nav-links",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "row", "gap": "8px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "nav-home",
+                  "type": "button",
+                  "props": { "label": "Home" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-about",
+                  "type": "button",
+                  "props": { "label": "About" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/about" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-books",
+                  "type": "button",
+                  "props": { "label": "Books" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/books" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-contact",
+                  "type": "button",
+                  "props": { "label": "Contact" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/contact" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "hero",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "justify-content": "center",
+        "gap": "16px",
+        "padding": "72px 24px",
+        "--canvas-container-background": "#f5efe3"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "hero-eyebrow",
+            "type": "text",
+            "props": { "text": "INDEPENDENT BOOKSTORE & CAFE · EST. 2019" },
+            "styles": {
+              "--canvas-text-text-color": "#8b5e3c",
+              "--canvas-text-font-size": "13px",
+              "--canvas-text-font-weight": "600",
+              "--canvas-text-text-align": "center"
+            }
+          },
+          {
+            "name": "hero-title",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "48px",
+              "--canvas-text-font-weight": "700",
+              "--canvas-text-text-align": "center"
+            }
+          },
+          {
+            "name": "hero-tagline",
+            "type": "text",
+            "props": { "text": "A cozy corner for readers and coffee lovers — curated books, fresh pastries, and a warm place to sit and stay a while." },
+            "styles": {
+              "--canvas-text-text-color": "#4b4033",
+              "--canvas-text-font-size": "18px",
+              "--canvas-text-text-align": "center"
+            }
+          },
+          {
+            "name": "hero-cta",
+            "type": "button",
+            "props": { "label": "Browse Our Books" },
+            "styles": { "--canvas-button-background": "#2d4a3a", "--canvas-button-text-color": "#f5efe3" },
+            "events": {
+              "onClick": {
+                "nodes": [
+                  { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                  { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/books" } } }
+                ],
+                "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+              }
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-1", "type": "divider" },
+    {
+      "name": "intro-section",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "12px",
+        "padding": "48px 64px",
+        "--canvas-container-background": "#ffffff"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "intro-title",
+            "type": "text",
+            "props": { "text": "Why stop by" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "28px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "intro-text",
+            "type": "text",
+            "props": { "text": "We're a family-run bookstore with a full espresso bar in the back corner. Every shelf is hand-picked by our staff, every pastry is baked that morning, and every table is yours for as long as you need it." },
+            "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+          }
+        ]
+      }
+    },
+    { "name": "divider-2", "type": "divider" },
+    {
+      "name": "highlights-section",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "20px",
+        "padding": "48px 64px",
+        "--canvas-container-background": "#f5efe3"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "highlights-title",
+            "type": "text",
+            "props": { "text": "This week at Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "28px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "highlights-grid",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "row", "flex-wrap": "wrap", "gap": "20px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "highlight-picks",
+                  "type": "card",
+                  "props": { "title": "Curated Picks", "subtitle": "New arrivals on the front table" },
+                  "styles": { "min-width": "220px", "flex": "1" },
+                  "slots": {
+                    "default": [
+                      {
+                        "name": "highlight-picks-text",
+                        "type": "text",
+                        "props": { "text": "Staff picks change every Monday, chosen by whoever's reading something they can't put down." }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "highlight-menu",
+                  "type": "card",
+                  "props": { "title": "Cafe Menu", "subtitle": "Coffee, tea, and fresh-baked pastries" },
+                  "styles": { "min-width": "220px", "flex": "1" },
+                  "slots": {
+                    "default": [
+                      {
+                        "name": "highlight-menu-text",
+                        "type": "text",
+                        "props": { "text": "Pour-over coffee, loose-leaf tea, and a rotating pastry case from our in-house baker." }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "highlight-events",
+                  "type": "card",
+                  "props": { "title": "Weekly Events", "subtitle": "Book club, story hour, open mic" },
+                  "styles": { "min-width": "220px", "flex": "1" },
+                  "slots": {
+                    "default": [
+                      {
+                        "name": "highlight-events-text",
+                        "type": "text",
+                        "props": { "text": "Tuesday book club, Saturday morning story hour for kids, and open mic poetry on the last Friday of the month." }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-3", "type": "divider" },
+    {
+      "name": "footer",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "4px",
+        "padding": "24px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "footer-text",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf · 214 Elm Street · Open daily 7am–8pm" },
+            "styles": { "--canvas-text-text-color": "#f5efe3", "--canvas-text-font-size": "14px", "--canvas-text-text-align": "center" }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

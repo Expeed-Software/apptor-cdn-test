@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "key": "runner-metadata-verify-2",
+    "displayName": "Lantern & Leaf",
+    "description": "Independent bookstore and cafe — curated books, fresh pastries, and a warm place to sit and stay a while."
+  },
+  "isMultiTenant": false,
+  "version": "1.0.0",
+  "source": { "branch": "main", "commit": "0000000" },
+  "exportedAt": "2026-09-09T09:00:00Z",
+  "exportedBy": "studio@apptor",
+  "auth": {
+    "required": false,
+    "authProvider": "apptor-id",
+    "expectedClaims": [],
+    "tokenStrategy": "apptor-minted",
+    "configKeys": []
+  },
+  "integrations": []
+}

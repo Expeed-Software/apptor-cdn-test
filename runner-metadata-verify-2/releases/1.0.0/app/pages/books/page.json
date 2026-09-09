@@ -1,0 +1,229 @@
+{
+  "components": [
+    {
+      "name": "nav-bar",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "align-items": "center",
+        "justify-content": "space-between",
+        "padding": "20px 40px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "brand",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#f5efe3",
+              "--canvas-text-font-size": "22px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "nav-links",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "row", "gap": "8px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "nav-home",
+                  "type": "button",
+                  "props": { "label": "Home" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-about",
+                  "type": "button",
+                  "props": { "label": "About" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/about" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-books",
+                  "type": "button",
+                  "props": { "label": "Books" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/books" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-contact",
+                  "type": "button",
+                  "props": { "label": "Contact" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/contact" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "books-hero",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "12px",
+        "padding": "56px 24px",
+        "--canvas-container-background": "#f5efe3"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "books-title",
+            "type": "text",
+            "props": { "text": "What We Carry" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "40px",
+              "--canvas-text-font-weight": "700",
+              "--canvas-text-text-align": "center"
+            }
+          },
+          {
+            "name": "books-sub",
+            "type": "text",
+            "props": { "text": "Every section hand-picked and re-stocked weekly." },
+            "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px", "--canvas-text-text-align": "center" }
+          }
+        ]
+      }
+    },
+    { "name": "divider-1", "type": "divider" },
+    {
+      "name": "genre-grid",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "flex-wrap": "wrap",
+        "gap": "20px",
+        "padding": "48px 64px",
+        "--canvas-container-background": "#ffffff"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "genre-fiction",
+            "type": "card",
+            "props": { "title": "Fiction", "subtitle": "Literary, contemporary, and classics" },
+            "styles": { "min-width": "220px", "flex": "1" },
+            "slots": {
+              "default": [
+                { "name": "genre-fiction-text", "type": "text", "props": { "text": "From new releases to well-worn classics, our fiction wall is the first thing you see walking in." } }
+              ]
+            }
+          },
+          {
+            "name": "genre-nonfiction",
+            "type": "card",
+            "props": { "title": "Nonfiction", "subtitle": "History, biography, and essays" },
+            "styles": { "min-width": "220px", "flex": "1" },
+            "slots": {
+              "default": [
+                { "name": "genre-nonfiction-text", "type": "text", "props": { "text": "Deep dives into history and science, alongside memoirs and essay collections our staff can't stop talking about." } }
+              ]
+            }
+          },
+          {
+            "name": "genre-kids",
+            "type": "card",
+            "props": { "title": "Children's", "subtitle": "Picture books through middle grade" },
+            "styles": { "min-width": "220px", "flex": "1" },
+            "slots": {
+              "default": [
+                { "name": "genre-kids-text", "type": "text", "props": { "text": "A dedicated reading nook and a shelf of picture books, early readers, and middle-grade favorites." } }
+              ]
+            }
+          },
+          {
+            "name": "genre-poetry",
+            "type": "card",
+            "props": { "title": "Poetry", "subtitle": "New voices and old favorites" },
+            "styles": { "min-width": "220px", "flex": "1" },
+            "slots": {
+              "default": [
+                { "name": "genre-poetry-text", "type": "text", "props": { "text": "A small but mighty poetry section, refreshed after every open mic night." } }
+              ]
+            }
+          },
+          {
+            "name": "genre-local",
+            "type": "card",
+            "props": { "title": "Local Authors", "subtitle": "Signed copies from writers in town" },
+            "styles": { "min-width": "220px", "flex": "1" },
+            "slots": {
+              "default": [
+                { "name": "genre-local-text", "type": "text", "props": { "text": "We keep a standing table for local authors — ask at the counter about our next signing event." } }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-2", "type": "divider" },
+    {
+      "name": "footer",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "4px",
+        "padding": "24px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "footer-text",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf · 214 Elm Street · Open daily 7am–8pm" },
+            "styles": { "--canvas-text-text-color": "#f5efe3", "--canvas-text-font-size": "14px", "--canvas-text-text-align": "center" }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

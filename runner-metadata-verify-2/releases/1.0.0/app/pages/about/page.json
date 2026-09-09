@@ -1,0 +1,185 @@
+{
+  "components": [
+    {
+      "name": "nav-bar",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "row",
+        "align-items": "center",
+        "justify-content": "space-between",
+        "padding": "20px 40px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "brand",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf" },
+            "styles": {
+              "--canvas-text-text-color": "#f5efe3",
+              "--canvas-text-font-size": "22px",
+              "--canvas-text-font-weight": "700"
+            }
+          },
+          {
+            "name": "nav-links",
+            "type": "container",
+            "styles": { "display": "flex", "flex-direction": "row", "gap": "8px" },
+            "slots": {
+              "default": [
+                {
+                  "name": "nav-home",
+                  "type": "button",
+                  "props": { "label": "Home" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-about",
+                  "type": "button",
+                  "props": { "label": "About" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/about" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-books",
+                  "type": "button",
+                  "props": { "label": "Books" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/books" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                },
+                {
+                  "name": "nav-contact",
+                  "type": "button",
+                  "props": { "label": "Contact" },
+                  "styles": { "--canvas-button-text-color": "#f5efe3" },
+                  "events": {
+                    "onClick": {
+                      "nodes": [
+                        { "id": "start", "data": { "name": "start", "type": "start", "params": {} } },
+                        { "id": "go", "data": { "name": "go", "type": "navigate", "params": { "urlOrPath": "/contact" } } }
+                      ],
+                      "edges": [{ "id": "e1", "source": "start", "target": "go" }]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "about-hero",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "12px",
+        "padding": "56px 24px",
+        "--canvas-container-background": "#f5efe3"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "about-title",
+            "type": "text",
+            "props": { "text": "Our Story" },
+            "styles": {
+              "--canvas-text-text-color": "#2d4a3a",
+              "--canvas-text-font-size": "40px",
+              "--canvas-text-font-weight": "700",
+              "--canvas-text-text-align": "center"
+            }
+          }
+        ]
+      }
+    },
+    { "name": "divider-1", "type": "divider" },
+    {
+      "name": "about-body",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "16px",
+        "padding": "48px 80px",
+        "--canvas-container-background": "#ffffff"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "about-p1",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf opened its doors in 2019 in a converted hardware store on Elm Street. What started as a single shelf of used paperbacks and a coffee pot in the corner grew, one regular at a time, into the full bookstore and cafe you'll find today." },
+            "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+          },
+          {
+            "name": "about-p2",
+            "type": "text",
+            "props": { "text": "We're still family-run — three generations of the same family have worked the counter at one point or another. Every book on our shelves has been read and recommended by someone on staff, and every pastry comes out of our own kitchen." },
+            "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+          },
+          {
+            "name": "about-p3",
+            "type": "text",
+            "props": { "text": "Our name comes from the lantern that used to hang in the hardware store window, and the leaf-shaped emblem embossed on the shop's original set of keys — both still on display by the register." },
+            "styles": { "--canvas-text-text-color": "#4b4033", "--canvas-text-font-size": "16px" }
+          }
+        ]
+      }
+    },
+    { "name": "divider-2", "type": "divider" },
+    {
+      "name": "footer",
+      "type": "container",
+      "styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "center",
+        "gap": "4px",
+        "padding": "24px",
+        "--canvas-container-background": "#2d4a3a"
+      },
+      "slots": {
+        "default": [
+          {
+            "name": "footer-text",
+            "type": "text",
+            "props": { "text": "Lantern & Leaf · 214 Elm Street · Open daily 7am–8pm" },
+            "styles": { "--canvas-text-text-color": "#f5efe3", "--canvas-text-font-size": "14px", "--canvas-text-text-align": "center" }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}
