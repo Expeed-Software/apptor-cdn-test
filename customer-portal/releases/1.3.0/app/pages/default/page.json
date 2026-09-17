@@ -1,10 +1,15 @@
 {
   "components": [
-    { "name": "heading", "type": "text", "props": { "text": "Customer Portal" }, "styles": { "font-size": "28px", "font-weight": "700" }, "slots": [] },
-    { "name": "subheading", "type": "text", "props": { "text": "Version 1.3.0 sample page" }, "styles": { "font-size": "16px" }, "slots": [] },
+    {
+      "name": "pageHeader", "type": "container", "styleGroup": "page-header", "props": {}, "styles": {},
+      "slots": [
+        { "name": "heading", "type": "text", "styleGroup": "page-title", "props": { "text": "Customer Portal" }, "styles": {}, "slots": [] },
+        { "name": "subheading", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "Version 1.3.0 sample page" }, "styles": {}, "slots": [] }
+      ]
+    },
     { "name": "div1", "type": "divider", "props": { "label": "Quick actions" }, "styles": {}, "slots": [] },
-    { "name": "defaultButton", "type": "button", "props": { "label": "Default Page" }, "styles": {}, "slots": [] },
-    { "name": "viewOrdersButton", "type": "button", "props": { "label": "View Orders" }, "styles": {}, "slots": [] },
+    { "name": "defaultButton", "type": "button", "styleGroup": "primary", "props": { "label": "Default Page", "severity": "primary" }, "styles": {}, "slots": [] },
+    { "name": "viewOrdersButton", "type": "button", "styleGroup": "secondary", "props": { "label": "View Orders", "severity": "secondary" }, "styles": {}, "slots": [] },
     { "name": "contactSupportButton", "type": "button", "props": { "label": "Contact Support" }, "styles": {}, "slots": [] },
     { "name": "div2", "type": "divider", "props": { "label": "Account summary" }, "styles": {}, "slots": [] },
     {

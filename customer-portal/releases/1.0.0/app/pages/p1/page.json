@@ -1,10 +1,15 @@
 {
   "components": [
-    { "name": "p1Heading", "type": "text", "props": { "text": "Page 1" }, "styles": { "font-size": "24px", "font-weight": "600" }, "slots": [] },
-    { "name": "p1Intro", "type": "text", "props": { "text": "A secondary page used to exercise multi-page navigation." }, "styles": {}, "slots": [] },
+    {
+      "name": "pageHeader", "type": "container", "styleGroup": "page-header", "props": {}, "styles": {},
+      "slots": [
+        { "name": "p1Heading", "type": "text", "styleGroup": "page-title", "props": { "text": "Page 1" }, "styles": {}, "slots": [] },
+        { "name": "p1Intro", "type": "text", "styleGroup": "page-subtitle", "props": { "text": "A secondary page used to exercise multi-page navigation." }, "styles": {}, "slots": [] }
+      ]
+    },
     { "name": "div1", "type": "divider", "props": { "label": "Actions" }, "styles": {}, "slots": [] },
-    { "name": "p1Button", "type": "button", "props": { "label": "Page 1 Action" }, "styles": {}, "slots": [] },
-    { "name": "backButton", "type": "button", "props": { "label": "Back to Default" }, "styles": {}, "slots": [] },
+    { "name": "p1Button", "type": "button", "styleGroup": "primary", "props": { "label": "Page 1 Action", "severity": "primary" }, "styles": {}, "slots": [] },
+    { "name": "backButton", "type": "button", "styleGroup": "secondary", "props": { "label": "Back to Default", "severity": "secondary" }, "styles": {}, "slots": [] },
     { "name": "div2", "type": "divider", "props": { "label": "Details" }, "styles": {}, "slots": [] },
     {
       "name": "infoCard",

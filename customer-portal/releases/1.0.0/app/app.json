@@ -1,3 +1,8 @@
 {
-  "pages": []
+  "defaultLocale": "en",
+  "title": "Customer Portal",
+  "defaultTheme": "customer-portal-theme",
+  "directionRtl": false,
+  "loginPath": null,
+  "securityType": null
 }
