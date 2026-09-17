@@ -1,0 +1,22 @@
+{
+  "components": [
+    { "name": "p1Heading", "type": "text", "props": { "text": "Page 1" }, "styles": { "font-size": "24px", "font-weight": "600" }, "slots": [] },
+    { "name": "p1Intro", "type": "text", "props": { "text": "A secondary page used to exercise multi-page navigation." }, "styles": {}, "slots": [] },
+    { "name": "div1", "type": "divider", "props": { "label": "Actions" }, "styles": {}, "slots": [] },
+    { "name": "p1Button", "type": "button", "props": { "label": "Page 1 Action" }, "styles": {}, "slots": [] },
+    { "name": "backButton", "type": "button", "props": { "label": "Back to Default" }, "styles": {}, "slots": [] },
+    { "name": "div2", "type": "divider", "props": { "label": "Details" }, "styles": {}, "slots": [] },
+    {
+      "name": "infoCard",
+      "type": "card",
+      "props": { "title": "Details", "subtitle": "Sample content block" },
+      "styles": {},
+      "slots": [
+        { "name": "infoText", "type": "text", "props": { "text": "This card demonstrates nested slots on Page 1." }, "styles": {}, "slots": [] },
+        { "name": "learnMoreButton", "type": "button", "props": { "label": "Learn More" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}

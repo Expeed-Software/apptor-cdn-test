@@ -1,0 +1,25 @@
+{
+  "components": [
+    { "name": "heading", "type": "text", "props": { "text": "Customer Portal" }, "styles": { "font-size": "28px", "font-weight": "700" }, "slots": [] },
+    { "name": "subheading", "type": "text", "props": { "text": "Version 1.2.0 sample page" }, "styles": { "font-size": "16px" }, "slots": [] },
+    { "name": "div1", "type": "divider", "props": { "label": "Quick actions" }, "styles": {}, "slots": [] },
+    { "name": "defaultButton", "type": "button", "props": { "label": "Default Page" }, "styles": {}, "slots": [] },
+    { "name": "viewOrdersButton", "type": "button", "props": { "label": "View Orders" }, "styles": {}, "slots": [] },
+    { "name": "contactSupportButton", "type": "button", "props": { "label": "Contact Support" }, "styles": {}, "slots": [] },
+    { "name": "div2", "type": "divider", "props": { "label": "Account summary" }, "styles": {}, "slots": [] },
+    {
+      "name": "accountCard",
+      "type": "card",
+      "props": { "title": "Account", "subtitle": "Current plan and balance" },
+      "styles": {},
+      "slots": [
+        { "name": "planText", "type": "text", "props": { "text": "Plan: Standard" }, "styles": {}, "slots": [] },
+        { "name": "balanceText", "type": "text", "props": { "text": "Balance due: $0.00" }, "styles": {}, "slots": [] },
+        { "name": "manageBillingButton", "type": "button", "props": { "label": "Manage Billing" }, "styles": {}, "slots": [] }
+      ]
+    },
+    { "name": "footerText", "type": "text", "props": { "text": "This release adds notification integration." }, "styles": { "font-size": "12px" }, "slots": [] }
+  ],
+  "variables": [],
+  "overlays": []
+}

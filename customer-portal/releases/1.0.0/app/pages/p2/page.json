@@ -1,0 +1,23 @@
+{
+  "components": [
+    { "name": "p2Heading", "type": "text", "props": { "text": "Page 2" }, "styles": { "font-size": "24px", "font-weight": "600" }, "slots": [] },
+    { "name": "p2Intro", "type": "text", "props": { "text": "Another secondary page, distinct from Page 1." }, "styles": {}, "slots": [] },
+    { "name": "div1", "type": "divider", "props": { "label": "Actions" }, "styles": {}, "slots": [] },
+    { "name": "p2Button", "type": "button", "props": { "label": "Page 2 Action" }, "styles": {}, "slots": [] },
+    { "name": "backButton", "type": "button", "props": { "label": "Back to Default" }, "styles": {}, "slots": [] },
+    { "name": "div2", "type": "divider", "props": { "label": "Notifications" }, "styles": {}, "slots": [] },
+    {
+      "name": "notificationsCard",
+      "type": "card",
+      "props": { "title": "Notifications", "subtitle": "Recent activity" },
+      "styles": {},
+      "slots": [
+        { "name": "note1", "type": "text", "props": { "text": "Your last invoice was paid." }, "styles": {}, "slots": [] },
+        { "name": "note2", "type": "text", "props": { "text": "Support ticket #482 is in progress." }, "styles": {}, "slots": [] },
+        { "name": "dismissButton", "type": "button", "props": { "label": "Dismiss All" }, "styles": {}, "slots": [] }
+      ]
+    }
+  ],
+  "variables": [],
+  "overlays": []
+}
